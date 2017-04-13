@@ -17,7 +17,6 @@ $(function () {
        win_w = $(window).width();
 
 
-
    /*为组件添加onLeave和onLoad事件函数*/
     function addLeave(element,animate,speed,delay) {
         element.on('onLeave',function () {
@@ -34,9 +33,6 @@ $(function () {
    * ===============================*/
        addLeave($home_content_main,{opacity:0,left:'100%'});
        addLoad($home_content_main,{opacity:1,left:0},800);
-
-
-
 
    /*===============================
     *   f1部分  ---第二页
@@ -200,8 +196,6 @@ $(function () {
     $back.click(function () {
         $.fn.fullpage.moveTo(1)
     });
-
-
 
    $('#wrap').fullpage({
        onLeave:function(index,nextIndex,direction){
